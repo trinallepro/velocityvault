@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse des Performances Cyclistes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #map {
+            height: 500px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center">Analyse des Performances Cyclistes</h1>
+    <p class="text-center">Importez un fichier GPX pour visualiser votre parcours et vos performances.</p>
+
+    <!-- Formulaire d'importation GPX -->
+    <div class="mb-3">
+        <label for="gpxFile" class="form-label">Importer un fichier GPX :</label>
+        <input type="file" id="gpxFile" class="form-control" accept=".gpx">
+    </div>
+
+    <!-- Carte -->
+    <div id="map"></div>
+
+    <!-- Résumé des performances -->
+    <div id="performanceSummary" class="mt-4 text-center"></div><a href="index.html" class="cta-button">Retour au menu</a>
+</div>
+
+<!-- Scripts nécessaires -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/togpx/1.2.0/togpx.min.js"></script>
+<script src="https://unpkg.com/leaflet-gpx"></script>
+<script src="scripts2.js"></script>
+</body>
+</html>
