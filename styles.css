@@ -233,3 +233,23 @@ header {
         padding: 20px;
     }
 }
+footer {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
